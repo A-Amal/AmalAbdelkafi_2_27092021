@@ -1,3 +1,53 @@
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+}
+#logo{
+    padding-left: 20px;
+}
+#navigation{
+    width: 70%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+#nav_list{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#nav_list li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#nav_list li #non_active {
+    color: #030101b0 ;
+}
+#inscription{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #0065FC;
+}
+#nav_list li  #active{
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+    padding: 20px;
+    
+}
+
 #localisation{
     margin-left: 20px;
 }
@@ -13,6 +63,14 @@ button.recherche{
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
     border: none;
+    padding: 10px;
+}
+label#icon_recherche{
+
+    height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
 }
 ul{
     margin-block-start: 0;
@@ -30,22 +88,40 @@ li{
     margin-top: 20px;
 }
 #filtre{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     
 }
-button{
+.style_filter{
+    width: 100%;
     height: 40px;
-    border-radius: 20% / 50%;
-    background-color: white;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    border-radius: 15% / 50%;
     border: 3px #F2F2F2 solid;
-    padding: 10px
+}
+.icon_filtre{
+    width: 30px;
+    height: 40px;
+    background-color:rgb(222, 235, 255);
+    color: #0065FC;
+    border-radius: 20px;
+    
+    
+}
+button{
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border: 1px white solid;
+    border-radius: 15% / 50%;
 }
 h4,h2, p{
     margin-block: 5px;
 }
-prix-nuit{
+#prix-nuit{
     color: #f2f2f279;
 }
 .image_hotel{
@@ -58,6 +134,9 @@ prix-nuit{
 }
 #information{
    margin-left: 20px; 
+}
+#info{
+    padding-bottom: 20px;
 }
 
 .hebergements{
