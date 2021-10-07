@@ -1,4 +1,12 @@
-
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
 p{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -45,9 +53,10 @@ header{
     color: #0065FC;
     border-top: 2px #0065FC solid;
     padding: 20px;
-    
 }
-
+form{
+    margin-top: 10px;
+}
 #localisation{
     margin-left: 20px;
 }
@@ -71,6 +80,7 @@ label#icon_recherche{
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     padding: 10px;
+    text-align: center;
 }
 ul{
     margin-block-start: 0;
@@ -129,6 +139,7 @@ button{
 h4,h2, p{
     margin-block: 5px;
 }
+
 #prix-nuit{
     color: #f2f2f279;
 }
@@ -270,6 +281,10 @@ h4,h2, p{
     height: 380px;
     border-radius: 10px 10px 0 0;
 }
+#titre_activié{
+    margin-left: 20px;
+    color: black;
+}
 .activité_2{
     width: 48%;
     display: flex;
@@ -292,7 +307,9 @@ footer{
     display: flex;
     flex-direction:row ;
     padding-left: 20px;
-
+    
+    bottom:0;
+    width:100%;
 }
 .element{
     width: 33%;
