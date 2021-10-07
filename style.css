@@ -184,7 +184,13 @@ h4,h2, p{
 .prix-nuit{
     color: #030101b0;
 }
-
+.star{
+    color: #0065FC;
+    
+}
+.star-gris{
+    color: #9e9999 ;
+}
 .container_populaires{
     background-color:#F2F2F2 ;
     border-radius: 10px;
