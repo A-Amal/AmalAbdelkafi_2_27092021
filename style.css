@@ -180,6 +180,8 @@ h4,h2, p{
 }
 .description_hotel{
     margin-left: 10px;
+    
+
 }
 .prix-nuit{
     color: #030101b0;
@@ -201,6 +203,12 @@ h4,h2, p{
 }
 #titre_bloc{
     height: 10%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#icon_chart_line{
+    margin-top: 15px;
 }
 #container_card_populaires{
     height: 90%;
@@ -226,6 +234,11 @@ h4,h2, p{
 .decription_populaires{
     width: 45%;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.prix-nuit:nth-child(2){
+    flex: 1;
 }
 #activités{
     height: 40%;
