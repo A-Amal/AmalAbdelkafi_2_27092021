@@ -3,8 +3,8 @@ html {
   }
 body {
     min-height: 100%;
-    margin: 0;
-    padding: 0;
+    min-width: 100%;
+    margin: 0px;
     position: relative;
   }
 p{
@@ -23,12 +23,13 @@ header{
 }
 #logo{
     padding-left: 20px;
+    width: 100px;
 }
 #navigation{
     width: 70%;
     display: flex;
-    flex-direction: row; 
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
     margin-top: 20px;
     padding-right: 20px;
 }
@@ -39,12 +40,16 @@ header{
     margin-left: 20px;
     margin-right: 20px;
 }
+#nav_list_portable{
+    display: none;
+}
 #nav_list li{
     margin-left: 20px;
     margin-right: 20px;
 }
 #nav_list li #non_active {
     color: #030101b0 ;
+    font-family: 'Raleway', sans-serif;
 }
 #inscription{
     margin-left: 20px;
@@ -55,6 +60,7 @@ header{
     color: #0065FC;
     border-top: 2px #0065FC solid;
     padding: 18px;
+    font-family: 'Raleway', sans-serif;
 }
 form{
     margin-top: 10px;
@@ -66,10 +72,12 @@ form{
     color: #030101b0 ;
 }
 input{
+    width: 200px;
     height: 40px;
     border: none;
 }
 button.recherche{
+    width: 100px;
     color: white;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
@@ -77,12 +85,17 @@ button.recherche{
     padding: 10px;
 }
 label#icon_recherche{
-
     height: 40px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     padding: 10px;
     text-align: center;
+}
+label#icon_recherche i{
+    width: 30px;
+}
+.search{
+    display: none;
 }
 ul{
     margin-block-start: 0;
@@ -94,11 +107,14 @@ li{
  
 }
 #filtres{
-    height: 40px;
+    
     display: flex;
     flex-direction: row;
     margin-left: 20px;
     margin-top: 20px;
+}
+#filtres p{
+    padding-top: 15px;
 }
 #filtre{
     width: 60%;
@@ -120,7 +136,31 @@ li{
 .fas{
     line-height:none;
 }
-
+.fa-2x {
+    font-size: 1.2em;
+}
+.icon-background {
+    color: transparent;
+    border: 3px #e0e0e0 solid;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+}
+.fa-in-cir{
+    color: blue;
+    font-size: 16px;
+    margin-left: 3px;
+}
+.fa-stack {
+    display: inline-block;
+    height: 1em;
+    line-height: 1.1em;
+    position: relative;
+    vertical-align: middle;
+    width: 1em;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
 .circle-icon {
     background:rgb(222, 235, 255);
     color: #0065FC;
@@ -214,17 +254,21 @@ h1, h3, h4, h2{
     width: 30%;
     height: 30%;
     margin-left: 15px;
-    padding: 20px; 
+    /*padding: 20px; */
 }
 #titre_bloc{
     height: 10%;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #icon_chart_line{
     margin-top: 10px;
     font-size: 20px;
+    margin-right: 20px;
 }
 #container_card_populaires{
     height: 90%;
@@ -233,14 +277,16 @@ h1, h3, h4, h2{
     justify-content:space-around;
 }
 .card_populaires{
-    width: 100%;
+    width: 90%;
     height: 151px;
     background-color: white;
     border-radius: 10px;
-    margin-top:20px ;
-    border: 3px white solid;
+    
+    border: 3.5px white solid;
     display: flex;
     flex-direction: row;
+    
+    margin: 0 auto 20px auto;
 }
 .image_card_populaires{
     width: 45%;
@@ -258,11 +304,11 @@ h1, h3, h4, h2{
 }
 #activités{
     height: 40%;
-    width: 100%;
-    margin: 20px;
+    width: 95%;
+    padding: 20px;
 }
 .container_activités{
-    width: 97%;
+    width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -311,8 +357,7 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     flex-direction:row ;
-    padding-left: 20px;
-    
+    padding-top: 30px;
     bottom:0;
     width:100%;
 }
@@ -321,6 +366,7 @@ footer{
     display: flex;
     flex-direction:column ; 
     padding-bottom: 20px;
+    padding-left: 20px;
 }
 a{
     text-decoration: none;
@@ -335,8 +381,9 @@ a{
     }
 
     .container_populaires, #container_hebergement{
-        width: 95%;
+        width: 90%;
         margin-bottom: 20px;
+        padding: 20px;
     }
     #container_card_populaires {
         flex-direction: row;
@@ -348,48 +395,282 @@ a{
         justify-content: space-between
     }
     #activités{
-        width: 100%;
+        width: 95%;
         margin-right: 0px;
+        padding: 20px;
     }
 
 }
 @media all and (max-device-width: 767px){
-    h4, h2, p{
-        font-size: 30px;
+    header{
+        padding: 20px;
     }
-    h2,p{
-        margin-left: 30px;
+    button{
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
     }
-    #container_card_populaires {
+    h4, h2, h3{
+        font-size: 35px;
+        font-family: 'Raleway', sans-serif;
+    }
+    p{
+        font-size: 34px;
+        font-family: 'Raleway', sans-serif;
+    }
+    #logo{
+        width: 40%;
+        padding: 30px;
+    }
+    #navigation{
+       /* width: 50%;
+        flex-direction:column-reverse;
+        flex-wrap: wrap;*/
+        width: 70%;
+        margin: auto auto 70px 350px;
+        padding-right: 20px;
+    }
+    #inscription{
+        font-size: 40px;
+        width: 100%;
+        padding: 40px 40px 0 40px;
+        margin: auto;
+    }
+    #nav_list{
+        display: none;
+    }
+    #nav_list_portable{
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    #nav_list_portable ul{
+        display: flex;
+        justify-content: center;
+        padding-inline-start: 0;
+    }
+    #nav_list_portable ul li{
+        width: 50%;
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    #nav_list_portable ul #active a {
+        width: 100%;
+        color: #0065FC ;
+        margin-left: 30%;
+        font-family: 'Raleway', sans-serif;
+    }
+    #nav_list_portable ul #non_active a {
+        width: 100%;
+        color: #030101b0 ;
+        margin-left: 30%;
+        font-family: 'Raleway', sans-serif;
+    }
+     #active{
+        border-bottom: 2px #0065FC solid;
+        padding: 18px;  
+    }
+    #non_active {
+        border-bottom: 2px #a7a7a7bd solid;
+        padding: 18px;  
+    }
+    #localisation {
+        margin-left: 55px;
+    }
+    #localisation h2{
+        font-size: 50px;
+        
+    }
+    form{
+        width: 100%;
+        height: 100px;
+    }
+    label#icon_recherche {
+        height: 100px;
+        padding: 40px;
+        border-radius: 40px 0 0 40px;
+    }
+    label#icon_recherche i {
+        width: 30px;
+        font-size: 35px;
+    }
+    input{
+        height: 100px;
+        width: 50%;
+        font-size: 35px;
+    }
+    .recherche strong{
+        display: none;
+    }
+    .search{
+        display: block;
+    }
+
+    #filtres{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    button{
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+    #filtre{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #filtres p{
+        margin-left: 40px;
+    }
+    .style_filter{
+        height: 100px;
+        margin-top: 20px;
+        border: 5px #F2F2F2 solid;
+
+    }
+    #filtre li{
+        margin-right: 60px;
+    }
+    .circle-icon{
+        width: 102px;
+        height: 102px;
+        line-height: 100px !important;
+        font-size: 35px;
+    }
+    #information {
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    #info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .fa-info-circle:before {
+        font-size: 50px;
+        margin-right: 30px;
+    }
+    .icon-background {
+        color: white;
+        border: 5px #e0e0e0 solid;
+        border-radius: 50%;
+        width:1em;
+        height: 1em;
+    }
+    .fa-in-cir{
+        color: blue;
+        font-size: 35px;
+        margin-left: 5px;
+    }
+    .fa-stack {
+        display: inline-block;
+        height: 2em;
+        line-height: 1.1em !important;
+        position: relative;
+        vertical-align: middle;
+        width: 1em !important;
+        margin-right: 50px;
+    }
+    #container_card_populaires, .container_activités,#container_activités_part1, #container_activités_part2{
         flex-direction:column;
         justify-content: space-between;
+        width: 100%;
     }
     .container_populaires, #container_hebergement {
         width: 100%;
         margin-left: 0px;
+        padding-bottom: 50px;
+    }
+    #titre_bloc{
+        margin-left: 100px;
     }
     .card_populaires {
-        width: 90%;
-        height: 200px;
-        margin-left: 30px;
-        margin-right: 30px;
+        width: 80%;
+        height: 280px;
+        margin:20px auto auto auto;
+        border: 7px white solid;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px #dfdcdcf5;
+        justify-content: start;
+
     }
-    .image_card_populaires {
-        height: 200px;
+    .decription_populaires {
+        width: 45%;
+        margin-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .image_card_populaires{
+        height: 280px;
+        margin-right: 30px;
+        border-radius: 30px 0 0 30px;
     }
     #icon_chart_line {
         margin-top: 10px;
         font-size: 30px;
-        margin-right: 60px;
+        margin-right: 100px;
+    }
+    #container_hebergement {
+        width: 100%;
+        margin-left: 0px;
+        background-color: white;
+    }
+    #hébergements, #activités h2{
+        margin-left: 100px;
     }
     .container_cards {
         flex-direction: column;
-
+        margin-bottom: 50px;
     }
-    .card_hotel{
-        width: 90%;
-        height: 300px;
-        margin-left: 30px;
-        margin-right: 30px;
+    .card_hotel, .card_activité_1, .card_activité_2{
+        width: 80%;
+        height: 400px;
+        margin:20px auto auto auto;
+        border: 7px white solid;
+        border-radius: 30px;
+        box-shadow: 10px 10px 10px #ebe9e9f5;
     }
+    .image_hotel {
+        border-radius: 30px 30px 0 0;
+      
+    }
+    .description_hotel {
+        margin-left: 50px;
+    }
+    #container_hebergement p strong{
+        margin-left: 100px;
+    }
+    #activités {
+        width: 100%;
+        margin-right: 0px;
+        padding: 20px;
+    }
+    .activité_2{
+        width: 100%;
+    }
+    .image_card_activité_1, .image_card_activité_2  {
+        border-radius: 30px 30px 0 0;
+        height: 280px;
+    }
+    #titre_activié {
+        margin-top: revert;
+    }
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .element{
+        width: 100%;
+        margin: 30px 0 30px 100px;
+    }
+    .element a{
+        font-size: 40px;
+    }
+    
 }
