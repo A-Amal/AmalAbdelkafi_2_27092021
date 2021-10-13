@@ -6,6 +6,7 @@ body {
     min-width: 100%;
     margin: 0px;
     position: relative;
+    font-family: 'Raleway', sans-serif;
   }
 p{
     font-family: 'Raleway', sans-serif;
@@ -350,6 +351,7 @@ h1, h3, h4, h2{
     box-shadow: 5px 5px 5px #F2F2F2;
 }
 footer{
+    font-family: 'Raleway', sans-serif;
     background-color: #F2F2F2;
     display: flex;
     flex-direction:row ;
@@ -400,6 +402,10 @@ a{
 @media all and (max-device-width: 767px){
     header{
        width: 100%;
+       font-family: 'Raleway', sans-serif;
+    }
+    body{
+        font-family: 'Raleway', sans-serif;   
     }
     button{
         font-size: 40px;
@@ -409,7 +415,7 @@ a{
         padding: 0 20px;
     }
     h4, h2, h3{
-        font-size: 35px;
+        font-size: 40px;
         font-family: 'Raleway', sans-serif;
     }
     p{
@@ -475,7 +481,10 @@ a{
     }
     #localisation h2{
         font-size: 50px;
-        
+        padding: 30px 0;
+    }
+    #description{
+        padding-bottom: 20px;
     }
     form{
         width: 100%;
@@ -596,8 +605,6 @@ a{
     .decription_populaires {
         width: 45%;
         margin-left: 0px;
-        padding-top: 50px;
-        padding-bottom: 50px;
     }
     .image_card_populaires{
         height: 280px;
@@ -656,11 +663,14 @@ a{
     }
     footer {
         flex-direction: column;
-       
+        font-family: 'Raleway', sans-serif;
     }
     .element{
         width: 80%;
         margin: 30px auto 30px auto;
+    }
+    .element h4{
+        padding-bottom: 30px;
     }
     .element a{
         font-size: 40px;
