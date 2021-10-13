@@ -462,11 +462,11 @@ a{
         margin-left: 30%;
         font-family: 'Raleway', sans-serif;
     }
-     #active{
+    .active{
         border-bottom: 2px #0065FC solid;
         padding: 18px;  
     }
-    #non_active {
+    .non_active {
         border-bottom: 2px #a7a7a7bd solid;
         padding: 18px;  
     }
