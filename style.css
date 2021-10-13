@@ -174,10 +174,19 @@ button{
     width: 80%;
     height: 90%;
     background-color: transparent;
-    border: 1px white solid;
+    border: none;
     border-radius: 15% / 50%;
     font-family: 'Raleway', sans-serif;
 }
+.style_filter:hover{
+    background-color: rgb(222, 235, 255);
+    border: 3px rgb(222, 235, 255) solid;
+}
+.style_filter button:hover{
+    color: #0065FC;
+}
+
+
 h1, h3, h4, h2{
     margin-block: 5px;
     font-family: 'Raleway', sans-serif;
@@ -535,6 +544,10 @@ a{
         margin-top: 20px;
         border: 5px #F2F2F2 solid;
 
+    }
+    .style_filter:hover{
+        background-color: rgb(222, 235, 255);
+        border: 3px rgb(222, 235, 255) solid;
     }
     #filtre li{
         margin-right: 60px;
