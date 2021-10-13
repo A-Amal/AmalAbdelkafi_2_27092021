@@ -147,7 +147,7 @@ li{
     height: 1em;
 }
 .fa-in-cir{
-    color: blue;
+    color: #0065FC;
     font-size: 16px;
     margin-left: 3px;
 }
@@ -403,7 +403,7 @@ a{
 }
 @media all and (max-device-width: 767px){
     header{
-        padding: 20px;
+       width: 100%;
     }
     button{
         font-size: 40px;
@@ -425,12 +425,9 @@ a{
         padding: 30px;
     }
     #navigation{
-       /* width: 50%;
-        flex-direction:column-reverse;
-        flex-wrap: wrap;*/
-        width: 70%;
-        margin: auto auto 70px 350px;
-        padding-right: 20px;
+        width: 60%;
+        margin: auto 0 70px 0;
+        text-align: end;
     }
     #inscription{
         font-size: 40px;
@@ -444,7 +441,7 @@ a{
     #nav_list_portable{
         display: block;
         width: 100%;
-        padding: 20px;
+        
     }
     #nav_list_portable ul{
         display: flex;
@@ -511,10 +508,10 @@ a{
 
     #filtres{
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        padding-bottom: 20px;
+        padding-left: 0px !important;
     }
     button{
         width: 100%;
@@ -564,7 +561,7 @@ a{
         height: 1em;
     }
     .fa-in-cir{
-        color: blue;
+        color: #0065FC;
         font-size: 35px;
         margin-left: 5px;
     }
@@ -585,7 +582,7 @@ a{
     .container_populaires, #container_hebergement {
         width: 100%;
         margin-left: 0px;
-        padding-bottom: 50px;
+        padding: 0 0 50px 0;
     }
     #titre_bloc{
         margin-left: 100px;
@@ -649,7 +646,7 @@ a{
     #activités {
         width: 100%;
         margin-right: 0px;
-        padding: 20px;
+        padding: 0px;
     }
     .activité_2{
         width: 100%;
@@ -663,11 +660,11 @@ a{
     }
     footer {
         flex-direction: column;
-        padding: 20px;
+       
     }
     .element{
-        width: 100%;
-        margin: 30px 0 30px 100px;
+        width: 80%;
+        margin: 30px auto 30px auto;
     }
     .element a{
         font-size: 40px;
