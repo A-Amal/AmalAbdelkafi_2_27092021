@@ -76,6 +76,7 @@ input{
     width: 200px;
     height: 40px;
     border: none;
+    outline: none;
 }
 button.recherche{
     width: 100px;
